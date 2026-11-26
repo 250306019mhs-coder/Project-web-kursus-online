@@ -1,7 +1,0 @@
-var judul = document.querySelector("h1");
-
-var sapaan = document.createElement("p");
-sapaan.innerHTML = "Selamat datang! Yuk, mulai belajar bersama Academind.";
-sapaan.style.textAlign = "center";
-
-judul.after(sapaan);
