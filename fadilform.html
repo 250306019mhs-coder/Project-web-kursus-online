@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Pembelajaran Kursus ACADEMIND</title>
+  <link rel="stylesheet" href="kursus.css">
+</head>
+
+<body>
+  <h1>Sistem Pembelajaran Kursus ACADEMIND</h1>
+
+  <form>
+    <p class="petunjuk">Silakan isi form di bawah ini untuk menyimpan preferensi belajar anda.</p>
+
+    <div class="kolom">
+      <label for="nama">Nama Lengkap :</label>
+      <input type="text" id="nama" name="nama" required>
+      <p id="sapaan" class="hasil"></p>
+    </div>
+
+    <div class="kolom">
+      <label for="metode">Metode Belajar :</label>
+      <select id="metode" name="metode" required>
+        <option value="">Pilih metode belajar</option>
+        <option value="video pembelajaran">Video Pembelajaran</option>
+        <option value="live class">Live Class</option>
+        <option value="modul/pdf">Modul / PDF</option>
+      </select>
+    </div>
+
+    <div class="kolom">
+      <label>Hari Belajar :</label>
+
+      <input type="checkbox" id="senin" name="jadwal" value="senin">
+      <label for="senin">Senin</label>
+
+      <input type="checkbox" id="selasa" name="jadwal" value="selasa">
+      <label for="selasa">Selasa</label>
+
+      <input type="checkbox" id="rabu" name="jadwal" value="rabu">
+      <label for="rabu">Rabu</label>
+
+      <input type="checkbox" id="kamis" name="jadwal" value="kamis">
+      <label for="kamis">Kamis</label>
+
+      <input type="checkbox" id="jumat" name="jadwal" value="jumat">
+      <label for="jumat">Jumat</label>
+
+      <input type="checkbox" id="sabtu" name="jadwal" value="sabtu">
+      <label for="sabtu">Sabtu</label>
+    </div>
+
+    <div class="kolom">
+      <label for="waktu">Waktu Belajar :</label>
+      <select id="waktu" name="waktu" required>
+        <option value="">Pilih waktu belajar</option>
+        <option value="pagi">Pagi</option>
+        <option value="siang">Siang</option>
+        <option value="sore">Sore</option>
+        <option value="malam">Malam</option>
+      </select>
+    </div>
+
+    <div class="kolom">
+      <label for="durasi">Durasi Belajar :</label>
+      <select id="durasi" name="durasi" required>
+        <option value="">Pilih durasi belajar</option>
+        <option value="1">1 jam</option>
+        <option value="2">2 jam</option>
+        <option value="3">3 jam</option>
+      </select>
+      <p id="total-jam" class="hasil"></p>
+    </div>
+
+    <button type="submit">KIRIM</button>
+  </form>
+  <script src="fadilform.js"></script>
+</body>
+</html>

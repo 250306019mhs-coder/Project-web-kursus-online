@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran - Academind</title>
+    <link rel="stylesheet" href="pasya.css">
+</head>
+<body>
+    <p align="center">
+        <img src="academind.jpeg" alt="Logo Academind" width="150">
+    </p>
+    <h1>ACADEMIND</h1>
+
+    <section>
+        <h2>Formulir Pendaftaran</h2>
+
+        <!-- Tambahkan id="formPendaftaran" pada tag form -->
+        <form id="formPendaftaran" action="#" method="post">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hp">Nomor HP / WhatsApp</label>
+                <input type="tel" id="hp" name="hp" placeholder="08xxxxxxxxxx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="program">Pilih Program</label>
+                <select id="program" name="program" required>
+                    <option value="">-- Pilih program --</option>
+                    <option value="teknologi">Teknologi</option>
+                    <option value="matematika">Matematika</option>
+                    <option value="inggris">Bahasa Inggris</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan (opsional)</label>
+                <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pertanyaan atau pesan kamu"></textarea>
+            </div>
+
+            <div class="button">
+                <button type="submit">DAFTAR</button>
+            </div>
+        </form>
+
+        <!-- Wadah untuk menampilkan output pendaftaran -->
+        <div id="output" style="display: none; margin-top: 20px; padding: 15px; border: 1px solid #4CAF50; background-color: #f9fff9; border-radius: 5px;"></div>
+
+        <p><a href="pasya1.html">&larr; Kembali ke halaman utama</a></p>
+    </section>
+
+    <footer>Learn anytime, anywhere</footer>
+    <script src="pasya2.js"></script>
+</body>
+</html>
